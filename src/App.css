@@ -1,38 +1,122 @@
-.App {
+/* @import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Uchen&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,400&display=swap');
+
+body{
+  /* font-family: 'Modern Antiqua', cursive; */
+  /* font-family: 'Uchen', serif; */
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.map{
+  /* height: 500px; */
+  width: 100%;
+}
+.leaflet-container{
+  height: 500px;
+}
+.container{
+  margin-top: 0;
+}
+.form-div{
+  height: 150px;
+  background-image: url(./Components/pattern-bg.png);
+  margin-top: 0;
+  /* width: 100%; */
+  padding: 20px;
+}
+.form-div h3{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 0;
   color: white;
+  font-size: 20px;
+}
+.form-div form{
+  width: 60%;
+  margin: 0 auto;
+}
+.info-div p{
+  font-size: 22px;
+  font-weight: 800;
+}
+/* input, select, textarea {
+  min-width: 250px;
+  font-size: 18px;
+  line-height: inherit;
+  color: rgb(78, 82, 85);
+  margin: 15px 0px;
+  outline: none;
+  border-width: 1px;
+  border-style: initial;
+  border-color: rgb(234, 222, 245);
+  border-image: initial;
+  padding: 15px 20px;
+  border-radius: 10px;
+} */
+
+input{
+  width: 45%;
+  /* margin: 0 auto; */
+  border: 0px solid ;
+  margin-left: 200px;
+  margin-right: 350px;
+  outline: none;
+  caret-color: hsl(220, 98%, 61%);
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.form-div form button{
+  /* width: 60%; */
+  margin-left: -400px;
+  padding: 11px;
+  min-width: 50px;
+  height: auto;
+  background-color: hsl(0, 0%, 17%);
+  border: 1px solid hsl(0, 0%, 17%);
+  border-radius: 0px 8px 8px 0px; 
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  position: fixed;
+  top:120px;
+  right: 200px;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  text-align: center;
+
+}
+
+@media only screen and (max-width: 390px) {
+  input {
+    /* width: 45%; */
+    /* margin: 0 auto; */
+    border: 0px solid;
+    /* margin-left: 200px; */
+    /* margin-right: 350px; */
+    outline: none;
+    caret-color: hsl(220, 98%, 61%);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+}
+  
 }
